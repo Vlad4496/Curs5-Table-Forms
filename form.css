@@ -1,3 +1,11 @@
+form {
+    position: relative;
+    left: 30em;
+}
+h1 {
+    font-family: sans-serif;
+    font-weight: 900;
+}
 label {
     display: block;
     margin: 2em 0 0.5em 0;
@@ -6,15 +14,25 @@ button {
     display: block;
 }
 
-form {
-    color: rgba(150, 150, 150, 1);
+form label, input{
+    color: rgb(139, 138, 138);
+}
+form label {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+form input, textarea {
+    font-weight: 600;
+    font-size: 1.2em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 input {
     outline: 0;
     border-width: 0 0 2px;
     border-bottom-color: rgba(150, 150, 150, 1);
-    width: 30%;
+    width: 35%;
 }
 
 textarea {
@@ -25,5 +43,18 @@ textarea {
 }
 
 input::placeholder {
-    color: rgba(200, 200, 200, 0.5);
+    color: rgba(150, 150, 150, 0.3);
+}
+textarea::placeholder {
+    color: rgba(150, 150, 150, 0.3);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+button {
+    background-image: linear-gradient(to right, rgb(158, 27, 158), rgb(240, 18, 85));
+    padding: 0.7em 5em;
+    border-radius: 1em;
+    color: white;
+    margin: 2em 0 0 8em;
+    border-style: none;
 }
